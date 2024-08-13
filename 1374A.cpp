@@ -8,19 +8,11 @@ int main(){
 	while(t--){
 		int x,y,n;
 		cin>>x>>y>>n;
-		int a = n%x;
-		int b= x-y;
-		if(n%x==y){
-			cout<<n<<endl;
-		}
-		
-		else if(a>y)
-		{
-			cout<<n-(a-y)<<endl;
-		}
-		else if(a<y)
-		{
-			cout<<n-a-b<<endl;
+		int a= n%x;
+		if (a>=y) {
+			cout << n - n % x + y << endl;
+		} else {
+			cout << n - n % x - (x - y) << endl;
 		}
 	}
 	return 0;

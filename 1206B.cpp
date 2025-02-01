@@ -25,14 +25,11 @@ int main(){
   		count++;
   	}
   	else{
-  		count=count+(abs(a[i]-1));
+  		count=count+(a[i]-1);
   	}
 
   }
-  if(cm%2!=0 && cz!=0){
-  		cout<<count<<endl;
-  	}
-  	else if(cm%2!=0 && cz==0){
+  	if(cm%2!=0 && cz==0){
   		cout<<count+2<<endl;
   	}
   	else{
